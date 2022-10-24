@@ -8,11 +8,11 @@
   --form-background: rgb(0, 20, 70);
   --form-text: rgb(230, 230, 200);
   --header: #000;
-  --header-shadow: rgb(100, 0, 0);
+  --header-shadow: rgb(90, 0, 0);
   --invisible-elem: rgb(80, 0, 0);
   --invisible-elem-border: #fff;
   --optional: #cfcfcf;
-  --page-background: linear-gradient(rgba(255, 0, 0, 0.8) 5%, rgb(50, 0, 0));
+  --page-background: linear-gradient(rgba(150, 0, 0, 0.8) 5%, rgb(50, 0, 0));
 }
 
 * {
@@ -38,7 +38,7 @@ header {
 
 h1 {
   font-weight: 600;
-  text-shadow: 2px 2px 5px var(--header-shadow);
+  text-shadow: 2px 2px 3px var(--header-shadow);
 }
 
 #description {
@@ -197,6 +197,7 @@ footer {
 
 a {
   color: var(--anchor-tag);
+  text-decoration: none;
 }
 
 a:hover {
