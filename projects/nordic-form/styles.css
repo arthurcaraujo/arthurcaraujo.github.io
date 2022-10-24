@@ -7,12 +7,12 @@
   --footer: #fff;
   --form-background: rgb(0, 20, 70);
   --form-text: rgb(230, 230, 200);
-  --header: #000;
-  --header-shadow: rgb(90, 0, 0);
+  --header: rgb(0, 200, 200);
+  --header-shadow: rgb(0, 0, 0);
   --invisible-elem: rgb(80, 0, 0);
   --invisible-elem-border: #fff;
   --optional: #cfcfcf;
-  --page-background: linear-gradient(rgba(150, 0, 0, 0.8) 5%, rgb(50, 0, 0));
+  --page-background: linear-gradient(rgb(150, 0, 0) 5%, rgb(50, 0, 0));
 }
 
 * {
