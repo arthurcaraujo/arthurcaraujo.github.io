@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nordic Languages Survey Form</title>
+    </head>
+
+    <body>
+        <header>
+          <h1 id="title">Nordic Languages Survey Form</h1>
+          <p id="description">Hello and welcome! Could you share about your language learning experience?</p>
+        </header>
+        
+        <form id="survey-form">
+          <div class="group">
+            <label id="name-label" for="name">What is your name?</label>
+            <input class="control" id="name" name="your-name" placeholder="Enter your name" type="text" required>
+          </div>
+          
+          <div class="group">
+            <label id="email-label" for="email">What is your email address?</label>
+            <input class="control" id="email" name="your-email" placeholder="Enter your email" type="email" required>
+          </div>
+          
+          <div class="group">
+            <label id="number-label" for="number">How old are you? <small>(optional)</small></label>
+            <input class="control" id="number" name="age" type="number" min="0" max="135" placeholder="Enter your age">
+          </div>
+          
+          <div class="group">
+            <label for="dropdown">How many languages do you speak?</label>
+            <select id="dropdown">
+              <option>Select an option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+          
+          <div class="group">
+            <p>Do you speak any Nordic languages?</p>
+            <label for="radio-yes"><input id="radio-yes" name="yes-no" type="radio" value="yes" onchange="radioBtnsFunc()">Yes</label>
+
+            <label for="radio-no"><input id="radio-no" name="yes-no" type="radio" value="no" onchange="radioBtnsFunc()" checked>No</label>
+          </div>
+          
+          <div class="group">
+            <p>What Nordic languages do you speak?</p>
+              
+            <div id="columns">
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="danish" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">Danish
+                  <select class="proficiency" disabled>
+                    <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                    <option value="a1">A1 (Beginner)</option>
+                    <option value="a2">A2 (Elementary)</option>
+                    <option value="b1">B1 (Intermediate)</option>
+                    <option value="b2">B2 (Upper-intermediate)</option>
+                    <option value="c1">C1 (Advanced)</option>
+                    <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>      
+              </label>
+        
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="faroese" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">Faroese
+                  <select class="proficiency" disabled>
+                      <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                      <option value="a1">A1 (Beginner)</option>
+                      <option value="a2">A2 (Elementary)</option>
+                      <option value="b1">B1 (Intermediate)</option>
+                      <option value="b2">B2 (Upper-intermediate)</option>
+                      <option value="c1">C1 (Advanced)</option>
+                      <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>
+              </label>
+        
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="finnish" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">Finnish
+                  <select class="proficiency" disabled>
+                        <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                        <option value="a1">A1 (Beginner)</option>
+                        <option value="a2">A2 (Elementary)</option>
+                        <option value="b1">B1 (Intermediate)</option>
+                        <option value="b2">B2 (Upper-intermediate)</option>
+                        <option value="c1">C1 (Advanced)</option>
+                        <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>
+              </label>
+
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="icelandic" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">Icelandic
+                  <select class="proficiency" disabled>
+                        <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                        <option value="a1">A1 (Beginner)</option>
+                        <option value="a2">A2 (Elementary)</option>
+                        <option value="b1">B1 (Intermediate)</option>
+                        <option value="b2">B2 (Upper-intermediate)</option>
+                        <option value="c1">C1 (Advanced)</option>
+                        <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>
+              </label>
+      
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="norwegian" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">Norwegian
+                  <select class="proficiency" disabled>
+                        <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                        <option value="a1">A1 (Beginner)</option>
+                        <option value="a2">A2 (Elementary)</option>
+                        <option value="b1">B1 (Intermediate)</option>
+                        <option value="b2">B2 (Upper-intermediate)</option>
+                        <option value="c1">C1 (Advanced)</option>
+                        <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>
+              </label>
+        
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="swedish" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">Swedish
+                  <select class="proficiency" disabled>
+                        <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                        <option value="a1">A1 (Beginner)</option>
+                        <option value="a2">A2 (Elementary)</option>
+                        <option value="b1">B1 (Intermediate)</option>
+                        <option value="b2">B2 (Upper-intermediate)</option>
+                        <option value="c1">C1 (Advanced)</option>
+                        <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>
+              </label>
+                
+              <label>
+                <input class="language-checkbox" name="language" type="checkbox" value="other" onclick="checkboxesFunc()" disabled>
+                <span class="inner-flex">
+                  <label id="container-for-other" for="other">
+                    <input id="other" type="text" placeholder="Other" oninput="otherLangFunc()" disabled>
+                  </label>
+                  <select class="proficiency" disabled>
+                      <option class="proficiency-default-value" disabled selected value>Level of proficiency</option>
+                      <option value="a1">A1 (Beginner)</option>
+                      <option value="a2">A2 (Elementary)</option>
+                      <option value="b1">B1 (Intermediate)</option>
+                      <option value="b2">B2 (Upper-intermediate)</option>
+                      <option value="c1">C1 (Advanced)</option>
+                      <option value="c2">C2 (Proficient)</option>
+                  </select>
+                </span>
+              </label>             
+            </div>
+
+            <div class="invisible-elem">
+              <label for="danish-intro">Could you introduce yourself in Danish?<textarea id="danish-intro" class="intro" lang="da" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+            <div class="invisible-elem">
+              <label for="faroese-intro">Could you introduce yourself in Faroese?<textarea id="faroese-intro" class="intro" lang="fo" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+            <div class="invisible-elem">
+              <label for="finnish-intro">Could you introduce yourself in Finnish?<textarea id="finnish-intro" class="intro" lang="fi" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+            <div class="invisible-elem">
+              <label for="icelandic-intro">Could you introduce yourself in Icelandic?<textarea id="icelandic-intro" class="intro" lang="is" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+            <div class="invisible-elem">
+              <label for="norwegian-intro">Could you introduce yourself in Norwegian?<textarea id="norwegian-intro" class="intro" lang="no" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+            <div class="invisible-elem">
+              <label for="swedish-intro">Could you introduce yourself in Swedish?<textarea id="swedish-intro" class="intro" lang="sv" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+            <div class="invisible-elem">
+              <label for="other-intro">Could you introduce yourself in <span id="other-lang">...</span>?<textarea id="other-intro" class="intro" placeholder="Enter your comments here" rows="3"></textarea></label>
+            </div>
+          </div>
+          
+          <div class="group">
+            <label for="textarea">Tell us a little about your experience in learning a foreign language.</label>
+            <textarea id="textarea" placeholder="Enter your comments here"></textarea>
+          </div>
+          
+          <button id="submit" type="submit">Submit</button>
+        </form>
+        
+        <footer>Created by <a href="https://www.freecodecamp.org/arthurcaraujo" target="_blank">Arthur Caixêta</a> via <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></footer>
+        
+        <script src="life.js"></script>
+      </body>
+</html>
