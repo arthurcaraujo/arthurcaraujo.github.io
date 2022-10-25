@@ -1,8 +1,8 @@
 const checkboxes = document.getElementsByClassName("language-checkbox");
-const proficiencyLevels = document.getElementsByClassName("proficiency");
-const proficiencyDefaultValues = document.getElementsByClassName("proficiency-default-value");
-const textInputLastCheckbox = document.getElementById("other");
 const invisibleElems = document.getElementsByClassName("invisible-elem");
+const proficiencyDefaultValues = document.getElementsByClassName("proficiency-default-value");
+const proficiencyLevels = document.getElementsByClassName("proficiency");
+const textInputLastCheckbox = document.getElementById("other");
 
 // Function for radio buttons
 function radioBtnsFunc() {
