@@ -1,3 +1,32 @@
+:root {
+    --arrow-background: rgb(0, 0, 150);
+    --arrow-border: white;
+    --arrow-color: white;
+    --footer: white;
+    --footer-background: rgb(140, 0, 0);
+    --footer-link: rgb(0, 170, 170);
+    --footer-link-hover: rgb(0, 255, 255);
+    --heading-background: rgb(150, 0, 0);
+    --heading-color: white;
+    --heading-shadow: black;
+    --list-color: rgb(0, 0, 100);
+    --navbar-background: rgb(200, 200, 200);
+    --navbar-background-hover: rgb(150, 150, 150);
+    --navbar-background-sec: rgb(140, 0, 0);
+    --navbar-border: rgb(0, 0, 50);
+    --navbar-color: rgb(100, 0, 0);
+    --navbar-color-hover: rgb(150, 0, 0);
+    --navbar-li-border: black;
+    --reference: rgb(0, 0, 200);
+    --reference-hover: rgb(0, 0, 150);
+    --subheading-color: rgb(150, 0, 0);
+    --table-background-even: rgb(220, 200, 200);
+    --table-background-hover: rgb(190, 170, 170);
+    --table-border: #919191;
+    --table-heading-background: rgb(0, 0, 100);
+    --table-heading-color: white;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -14,15 +43,15 @@ body {
 }
 
 #navbar header {
-    background-color: rgb(150, 0, 0);
+    background-color: var(--heading-background);
     margin: 0;
     padding: 1rem;
     width: 100%;
 }
 
 #navbar ul {
-    background-color: rgb(200, 200, 200);
-    border: 3px solid rgb(0, 0, 50);
+    background-color: var(--navbar-background);
+    border: 3px solid var(--navbar-border);
     display: none;
     height: 50%;
     margin: 0;
@@ -36,7 +65,7 @@ body {
 }
 
 #navbar li {
-    border-top: 1px solid black;
+    border-top: 1px solid var(--navbar-li-border);
     font-size: 1.2rem;
     list-style: none;
     margin: 0;
@@ -48,34 +77,34 @@ body {
 }
 
 #navbar a {
-    color: rgb(100, 0, 0);
+    color: var(--navbar-color);
     display: block;
     padding: 10px 20px;
     text-decoration: none;
 }
 
 #navbar a:hover {
-    background-color: rgb(150, 150, 150);
-    color: rgb(150, 0, 0);
+    background-color: var(--navbar-background-hover);
+    color: var(--navbar-color-hover);
 }
 
 h1 {
-    color: white;
+    color: var(--heading-color);
     font-family: Nunito;
     font-size: 1.7rem;
     font-weight: 700;
     margin: 0;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 1px var(--heading-shadow);
 }
 
 h2 {
-    color: rgb(150, 0, 0);
+    color: var(--subheading-color);
     font-family: Nunito;
     font-weight: 800;
 }
 
 strong {
-    color: rgb(0, 0, 100);
+    color: var(--list-color);
 }
 
 .main-section ul {
@@ -84,7 +113,7 @@ strong {
 }
 
 .arrow-down {
-    border: solid white;
+    border: solid var(--arrow-color);
     border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 3px;
@@ -93,7 +122,7 @@ strong {
 }
 
 .arrow-up {
-    border: solid white;
+    border: solid var(--arrow-color);
     border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 3px;
@@ -103,8 +132,8 @@ strong {
 
 #arrow-down-background, #arrow-up-background {
     align-items: center;
-    background-color: rgb(0, 0, 150);
-    border: 2px solid white;
+    background-color: var(--arrow-background);
+    border: 2px solid var(--arrow-border);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -139,7 +168,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #919191;
+    border: 1px solid var(--table-border);
     padding: 5px;
     text-align: center;
 }
@@ -149,31 +178,31 @@ td, th {
 }
 
 thead tr {
-    background-color: rgb(0, 0, 100);
-    color: white;
+    background-color: var(--table-heading-background);
+    color: var(--table-heading-color);
 }
 
 tbody tr:nth-child(even) {
-    background-color: rgb(220, 200, 200);
+    background-color: var(--table-background-even);
 }
 
 tbody tr:hover {
-    background-color: rgb(190, 170, 170);
+    background-color: var(--table-background-hover);
 }
 
 #References a {
-    color: rgb(0, 0, 200);
+    color: var(--reference);
     text-decoration: none;
 }
 
 #References a:hover {
-    color: rgb(0, 0, 150);
+    color: var(--reference-hover);
     text-decoration: underline;
 }
 
 footer {
-    background-color: rgb(140, 0, 0);
-    color: white;
+    background-color: var(--footer-background);
+    color: var(--footer);
     font-size: 0.9rem;
     margin: 0;
     padding: 10px;
@@ -181,86 +210,13 @@ footer {
 }
 
 footer a {
-    color: rgb(0, 170, 170);
+    color: var(--footer-link);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: rgb(0, 255, 255);
+    color: var(--footer-link-hover);
 }
-
-/*
-@media (min-width: 700px) {
-    #navbar {
-        position: fixed;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        width: 35%;
-    }
-
-    #navbar ul {
-        background-color: rgb(140, 0, 0);
-        border: 3px solid rgb(0, 0, 50);
-        display: block;
-        height: 86.5%;
-        margin: 0;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding: 0;
-        width: 35%;
-        z-index: 1;
-    }
-
-    #navbar li {
-        background-color: rgb(200, 200, 200);
-    }
-    
-    #navbar li:last-child {
-        border-bottom: 1px solid black;
-        margin-bottom: 35px;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    #arrow-down-background, #arrow-up-background {
-        visibility: hidden;
-    }
-
-    main, footer {
-        margin-left: 35%;
-    }
-
-    main {
-        margin-top: 0;
-        padding: 0 20px;
-    }
-}
-
-@media (min-width: 900px) {
-    #navbar {
-        width: 25%;
-    }
-
-    #navbar ul {
-        width: 25%;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    main, footer {
-        margin-left: 25%;
-    }
-
-    .country-cell {
-        padding-left: 30px;
-    }
-}
-*/
 
 @media (min-width: 700px) {
     body {
@@ -278,7 +234,7 @@ footer a:hover {
     }
 
     #navbar ul {
-        background-color: rgb(140, 0, 0);
+        background-color: var(--navbar-background-sec);
         display: block;
         height: 100%;
         margin: 0;
@@ -289,11 +245,11 @@ footer a:hover {
     }
 
     #navbar li {
-        background-color: rgb(200, 200, 200);
+        background-color: var(--navbar-background);
     }
     
     #navbar li:last-child {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--navbar-li-border);
         margin-bottom: 200px;
     }
 
