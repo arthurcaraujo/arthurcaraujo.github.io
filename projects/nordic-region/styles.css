@@ -61,7 +61,7 @@ body {
     position: fixed;
     top: 68px;
     width: 100%;
-    z-index: 1;
+    z-index: 20;
 }
 
 #navbar li {
@@ -107,6 +107,422 @@ strong {
     color: var(--list-color);
 }
 
+/* ----- Flags ----- */
+
+.data-group {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.data-group ul {
+    align-self: flex-start;
+}
+
+.flag {
+    border: 1px solid #999;
+    margin-bottom: 140px;
+    padding: 0;
+    position: relative;
+}
+
+/* Danish flag */
+
+.danish {
+    background-color: rgb(200, 0, 50);
+    height: 112px; /* 28 x 4 */
+    width: 148px; /* 37 x 4 */
+}
+
+.danish-horizontal-bar {
+    background-color: white;
+    height: 16px; /* 4 x 4 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 48px; /* 12 x 4 */
+    width: 146px; /* 148px - 2px */
+}
+
+.danish-vertical-bar {
+    background-color: white;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 48px; /* 12 x 4 */
+    top: 0;
+    width: 16px; /* 4 x 4 */
+}
+
+/* Faroese flag */
+
+.faroese {
+    background-color: white;
+    height: 112px; /* 16 x 7 */
+    width: 154px; /* 22 x 7 */
+}
+
+.faroese-blue-horizontal-bar {
+    background-color: #005EB9;
+    height: 28px; /* 4 x 7 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 42px; /* 6 x 7 */
+    width: 152px; /* 154px - 2px */
+    z-index: 1;
+}
+
+.faroese-red-horizontal-bar {
+    background-color: #EF303E;
+    height: 14px; /* 2 x 7 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49px; /* 7 x 7 */
+    width: 152px; /* 154px - 2px */
+    z-index: 2;
+}
+
+.faroese-blue-vertical-bar {
+    background-color: #005EB9;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 42px; /* 6 x 7 */
+    top: 0;
+    width: 28px; /* 4 x 7 */
+    z-index: 1;
+}
+
+.faroese-red-vertical-bar {
+    background-color: #EF303E;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 49px; /* 7 x 7 */
+    top: 0;
+    width: 14px; /* 2 x 7 */
+    z-index: 2;
+}
+
+/* Finnish flag */
+
+.finnish {
+    background-color: #fff;
+    height: 112px; /* 11 x 10.18181818 */
+    width: 183.2727272px; /* 18 x 10.18181818 */
+}
+
+.finnish-horizontal-bar {
+    background-color: #002F6C;
+    height: 30.54545454px; /* 3 x 10.18181818 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40.72727272px; /* 4 x 10.18181818 */
+    width: 181.2727272px; /* 183.2727272px - 2px */
+    z-index: 1;
+}
+
+.finnish-vertical-bar {
+    background-color: #002F6C;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50.90909090px; /* 5 x 10.18181818 */
+    top: 0;
+    width: 30.54545454px; /* 3 x 10.18181818 */
+    z-index: 1;
+}
+
+/* Greenlandic flag */
+
+.greenlandic {
+    background-color: #fff;
+    height: 112px; /* 12 x 9.333333333 */
+    width: 168px; /* 18 x 9.333333333 */
+}
+
+.greenlandic-lower-bar {
+    background-color: rgb(244, 41, 65);
+    bottom: 0;
+    height: 55px; /* 6 x 9.333333333 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 166px; /* 168px - 2px */
+    z-index: 1;
+}
+
+.greenlandic-upper-half-moon {
+    background-color: rgb(244, 41, 65);
+    border-radius: 37.33333333px 37.33333333px 0 0;
+    bottom: 55px;
+    height: 37.33333333px; /* 4 x 9.333333333 */
+    left: 28px; /* 3 x 9.333333333 */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 74.66666666px; /* 8 x 9.333333333 */
+    z-index: 2;
+}
+
+.greenlandic-lower-half-moon {
+    background-color: #fff;
+    border-radius: 0 0 37.33333333px 37.33333333px;
+    height: 37.33333333px; /* 4 x 9.333333333 */
+    left: 28px; /* 3 x 9.333333333 */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 55px;
+    width: 74.66666666px; /* 8 x 9.333333333 */
+    z-index: 2;
+}
+
+/* Icelandic flag */
+
+.icelandic {
+    background-color: #02529C;
+    height: 112px; /* 18 x 6.222222222 */
+    width: 155.5555556px; /* 25 x 6.222222222 */
+}
+
+.icelandic-white-horizontal-bar {
+    background-color: #fff;
+    height: 24.88888889px; /* 4 x 6.222222222 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 43.55555555px; /* 7 x 6.222222222 */
+    width: 153.5555556px; /* 155.5555556px - 2px */
+    z-index: 1;
+}
+
+.icelandic-red-horizontal-bar {
+    background-color: #DC1E35;
+    height: 12.44444444px; /* 2 x 6.222222222 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49.77777778px; /* 8 x 6.222222222 */
+    width: 153.5555556px; /* 155.5555556px - 2px */
+    z-index: 2;
+}
+
+.icelandic-white-vertical-bar {
+    background-color: #fff;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 43.55555555px; /* 7 x 6.222222222 */
+    top: 0;
+    width: 24.88888889px; /* 4 x 6.222222222 */
+    z-index: 1;
+}
+
+.icelandic-red-vertical-bar {
+    background-color: #DC1E35;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 49.77777778px; /* 8 x 6.222222222 */
+    top: 0;
+    width: 12.44444444px; /* 2 x 6.222222222 */
+    z-index: 2;
+}
+
+/* Norwegian flag */
+
+.norwegian {
+    background-color: #BA0C2F;
+    height: 112px; /* 16 x 7 */
+    width: 154px; /* 22 x 7 */
+}
+
+.norwegian-white-horizontal-bar {
+    background-color: #fff;
+    height: 28px; /* 4 x 7 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 42px; /* 6 x 7 */
+    width: 152px; /* 154px - 2px */
+    z-index: 1;
+}
+
+.norwegian-blue-horizontal-bar {
+    background-color: #00205B;
+    height: 14px; /* 2 x 7 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49px; /* 7 x 7 */
+    width: 152px; /* 154px - 2px */
+    z-index: 2;
+}
+
+.norwegian-white-vertical-bar {
+    background-color: #fff;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 42px; /* 6 x 7 */
+    top: 0;
+    width: 28px; /* 4 x 7 */
+    z-index: 1;
+}
+
+.norwegian-blue-vertical-bar {
+    background-color: #00205B;
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 49px; /* 7 x 7 */
+    top: 0;
+    width: 14px; /* 2 x 7 */
+    z-index: 2;
+}
+
+/* Swedish flag */
+
+.swedish {
+    background-color: rgb(0, 85, 155);
+    height: 112px; /* 10 x 11.2 */
+    width: 179.2px; /* 16 x 11.2 */
+}
+
+.swedish-horizontal-bar {
+    background-color: rgb(255, 206, 0);
+    height: 22.4px; /* 2 x 11.2 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 44.8px; /* 4 x 11.2 */
+    width: 177.2px; /* 179.2px - 2px */
+    z-index: 1;
+}
+
+.swedish-vertical-bar {
+    background-color: rgb(255, 206, 0);
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 56px; /* 5 x 11.2 */
+    top: 0;
+    width: 22.4px; /* 2 x 11.2 */
+    z-index: 1;
+}
+
+/* Åland flag */
+
+.aland {
+    background-color: rgb(0, 82, 165);
+    height: 112px; /* 17 x 6.588235294 */
+    width: 171.2941176px; /* 26 x 6.588235294 */
+}
+
+.aland-yellow-horizontal-bar {
+    background-color: rgb(255, 206, 0);
+    height: 32.94117647px; /* 5 x 6.588235294px */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 39.52941176px; /* 6 x 6.588235294px */
+    width: 169.2941176px; /* 171.2941176px - 2px */
+    z-index: 1;
+}
+
+.aland-red-horizontal-bar {
+    background-color: rgb(210, 16, 52);
+    height: 13.17647059px; /* 2 x 6.588235294 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49.41176471px; /* 7.5 x 6.588235294 */
+    width: 169.2941176px; /* 171.2941176px - 2px */
+    z-index: 2;
+}
+
+.aland-yellow-vertical-bar {
+    background-color: rgb(255, 206, 0);
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 52.70588235px; /* 8 x 6.588235294 */
+    top: 0;
+    width: 32.94117647px; /* 5 x 6.588235294 */
+    z-index: 1;
+}
+
+.aland-red-vertical-bar {
+    background-color: rgb(210, 16, 52);
+    height: 110px; /* 112px - 2px */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 62.58823529px; /* 9.5 x 6.588235294 */
+    top: 0;
+    width: 13.17647059px; /* 2 x 6.588235294 */
+    z-index: 2;
+}
+
+/* Flagpole */
+
+.flagpole {
+    background-color: #a1a1a1;
+    height: 200px;
+    margin-left: -7px;
+    margin-top: -1px;
+    position: absolute;
+    width: 6px;
+}
+
+.ornament {
+    background-color: rgb(232, 159, 3);
+    border-radius: 50% 50% 2px 2px;
+    height: 10px;
+    margin-left: -2px;
+    margin-top: -10px;
+    position: absolute;
+    width: 10px;
+}
+
+.base {
+    background-color: rgb(24, 118, 3);
+    border-radius: 30px 30px 0 0;
+    height: 30px;
+    margin-left: -32px;
+    margin-top: 200px;
+    position: absolute;
+    width: 70px;
+}
+
+/* ---------- */
+
 .main-section ul {
     margin: 0;
     padding-left: 20px;
@@ -144,7 +560,7 @@ strong {
     right: 30px;
     top: 80px;
     width: 50px;
-    z-index: 2;
+    z-index: 30;
 }
 
 #arrow-down-background {
@@ -287,6 +703,20 @@ footer a:hover {
 
     h1 {
         text-align: center;
+    }
+
+    .data-group {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    
+    .data-group ul {
+        /*align-self: center;*/
+        justify-self: left;
+    }
+
+    .flag {
+        margin: -50px 0 120px 50px;
     }
 
     .country-cell {
