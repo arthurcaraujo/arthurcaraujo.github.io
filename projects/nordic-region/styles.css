@@ -1,13 +1,37 @@
 :root {
     --arrow-background: rgb(0, 0, 150);
-    --arrow-border: white;
-    --arrow-color: white;
-    --footer: white;
+    --arrow-border: #fff;
+    --arrow-color: #fff;
+    --flag-aland-background: rgb(0, 82, 165);
+    --flag-aland-cross-lower: rgb(255, 206, 0);
+    --flag-aland-cross-upper: rgb(210, 16, 52);
+    --flag-border: #999;
+    --flag-danish-background: rgb(210, 16, 52);
+    --flag-danish-cross: #fff;
+    --flag-faroese-background: #fff;
+    --flag-faroese-cross-lower: #005EB9;
+    --flag-faroese-cross-upper: #EF303E;
+    --flag-finnish-background: #fff;
+    --flag-finnish-cross: #002F6C;
+    --flag-greenlandic-red: rgb(244, 41, 65);
+    --flag-greenlandic-white: #fff;
+    --flag-icelandic-background: #02529C;
+    --flag-icelandic-cross-lower: #fff;
+    --flag-icelandic-cross-upper: #DC1E35;
+    --flag-norwegian-background: #BA0C2F;
+    --flag-norwegian-cross-lower: #fff;
+    --flag-norwegian-cross-upper: #00205B;
+    --flag-swedish-background: rgb(0, 85, 155);
+    --flag-swedish-cross: rgb(255, 206, 0);
+    --flagpole: #a1a1a1;
+    --flagpole-base: rgb(24, 118, 3);
+    --flagpole-ornament: rgb(232, 159, 3);
+    --footer: #fff;
     --footer-background: rgb(140, 0, 0);
     --footer-link: rgb(0, 170, 170);
     --footer-link-hover: rgb(0, 255, 255);
     --heading-background: rgb(150, 0, 0);
-    --heading-color: white;
+    --heading-color: #fff;
     --heading-shadow: black;
     --list-color: rgb(0, 0, 100);
     --navbar-background: rgb(200, 200, 200);
@@ -24,7 +48,7 @@
     --table-background-hover: rgb(190, 170, 170);
     --table-border: #919191;
     --table-heading-background: rgb(0, 0, 100);
-    --table-heading-color: white;
+    --table-heading-color: #fff;
 }
 
 * {
@@ -120,7 +144,7 @@ strong {
 }
 
 .flag {
-    border: 1px solid #999;
+    border: 1px solid var(--flag-border);
     margin-bottom: 140px;
     padding: 0;
     position: relative;
@@ -129,13 +153,13 @@ strong {
 /* Danish flag */
 
 .danish {
-    background-color: rgb(210, 16, 52);
+    background-color: var(--flag-danish-background);
     height: 112px; /* 28 x 4 */
     width: 148px; /* 37 x 4 */
 }
 
 .danish-horizontal-bar {
-    background-color: white;
+    background-color: var(--flag-danish-cross);
     height: 16px; /* 4 x 4 */
     left: 0;
     margin: 0;
@@ -146,7 +170,7 @@ strong {
 }
 
 .danish-vertical-bar {
-    background-color: white;
+    background-color: var(--flag-danish-cross);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -159,13 +183,13 @@ strong {
 /* Faroese flag */
 
 .faroese {
-    background-color: white;
+    background-color: var(--flag-faroese-background);
     height: 112px; /* 16 x 7 */
     width: 154px; /* 22 x 7 */
 }
 
 .faroese-blue-horizontal-bar {
-    background-color: #005EB9;
+    background-color: var(--flag-faroese-cross-lower);
     height: 28px; /* 4 x 7 */
     left: 0;
     margin: 0;
@@ -177,7 +201,7 @@ strong {
 }
 
 .faroese-red-horizontal-bar {
-    background-color: #EF303E;
+    background-color: var(--flag-faroese-cross-upper);
     height: 14px; /* 2 x 7 */
     left: 0;
     margin: 0;
@@ -189,7 +213,7 @@ strong {
 }
 
 .faroese-blue-vertical-bar {
-    background-color: #005EB9;
+    background-color: var(--flag-faroese-cross-lower);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -201,7 +225,7 @@ strong {
 }
 
 .faroese-red-vertical-bar {
-    background-color: #EF303E;
+    background-color: var(--flag-faroese-cross-upper);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -215,13 +239,13 @@ strong {
 /* Finnish flag */
 
 .finnish {
-    background-color: #fff;
+    background-color: var(--flag-finnish-background);
     height: 112px; /* 11 x 10.18181818 */
     width: 183.2727272px; /* 18 x 10.18181818 */
 }
 
 .finnish-horizontal-bar {
-    background-color: #002F6C;
+    background-color: var(--flag-finnish-cross);
     height: 30.54545454px; /* 3 x 10.18181818 */
     left: 0;
     margin: 0;
@@ -233,7 +257,7 @@ strong {
 }
 
 .finnish-vertical-bar {
-    background-color: #002F6C;
+    background-color: var(--flag-finnish-cross);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -247,13 +271,13 @@ strong {
 /* Greenlandic flag */
 
 .greenlandic {
-    background-color: #fff;
+    background-color: var(--flag-greenlandic-white);
     height: 112px; /* 12 x 9.333333333 */
     width: 168px; /* 18 x 9.333333333 */
 }
 
 .greenlandic-lower-bar {
-    background-color: rgb(244, 41, 65);
+    background-color: var(--flag-greenlandic-red);
     bottom: 0;
     height: 55px; /* 6 x 9.333333333 */
     left: 0;
@@ -265,7 +289,7 @@ strong {
 }
 
 .greenlandic-upper-half-moon {
-    background-color: rgb(244, 41, 65);
+    background-color: var(--flag-greenlandic-red);
     border-radius: 37.33333333px 37.33333333px 0 0;
     bottom: 55px;
     height: 37.33333333px; /* 4 x 9.333333333 */
@@ -278,7 +302,7 @@ strong {
 }
 
 .greenlandic-lower-half-moon {
-    background-color: #fff;
+    background-color: var(--flag-greenlandic-white);
     border-radius: 0 0 37.33333333px 37.33333333px;
     height: 37.33333333px; /* 4 x 9.333333333 */
     left: 28px; /* 3 x 9.333333333 */
@@ -293,13 +317,13 @@ strong {
 /* Icelandic flag */
 
 .icelandic {
-    background-color: #02529C;
+    background-color: var(--flag-icelandic-background);
     height: 112px; /* 18 x 6.222222222 */
     width: 155.5555556px; /* 25 x 6.222222222 */
 }
 
 .icelandic-white-horizontal-bar {
-    background-color: #fff;
+    background-color: var(--flag-icelandic-cross-lower);
     height: 24.88888889px; /* 4 x 6.222222222 */
     left: 0;
     margin: 0;
@@ -311,7 +335,7 @@ strong {
 }
 
 .icelandic-red-horizontal-bar {
-    background-color: #DC1E35;
+    background-color: var(--flag-icelandic-cross-upper);
     height: 12.44444444px; /* 2 x 6.222222222 */
     left: 0;
     margin: 0;
@@ -323,7 +347,7 @@ strong {
 }
 
 .icelandic-white-vertical-bar {
-    background-color: #fff;
+    background-color: var(--flag-icelandic-cross-lower);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -335,7 +359,7 @@ strong {
 }
 
 .icelandic-red-vertical-bar {
-    background-color: #DC1E35;
+    background-color: var(--flag-icelandic-cross-upper);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -349,13 +373,13 @@ strong {
 /* Norwegian flag */
 
 .norwegian {
-    background-color: #BA0C2F;
+    background-color: var(--flag-norwegian-background);
     height: 112px; /* 16 x 7 */
     width: 154px; /* 22 x 7 */
 }
 
 .norwegian-white-horizontal-bar {
-    background-color: #fff;
+    background-color: var(--flag-norwegian-cross-lower);
     height: 28px; /* 4 x 7 */
     left: 0;
     margin: 0;
@@ -367,7 +391,7 @@ strong {
 }
 
 .norwegian-blue-horizontal-bar {
-    background-color: #00205B;
+    background-color: var(--flag-norwegian-cross-upper);
     height: 14px; /* 2 x 7 */
     left: 0;
     margin: 0;
@@ -379,7 +403,7 @@ strong {
 }
 
 .norwegian-white-vertical-bar {
-    background-color: #fff;
+    background-color: var(--flag-norwegian-cross-lower);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -391,7 +415,7 @@ strong {
 }
 
 .norwegian-blue-vertical-bar {
-    background-color: #00205B;
+    background-color: var(--flag-norwegian-cross-upper);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -405,13 +429,13 @@ strong {
 /* Swedish flag */
 
 .swedish {
-    background-color: rgb(0, 85, 155);
+    background-color: var(--flag-swedish-background);
     height: 112px; /* 10 x 11.2 */
     width: 179.2px; /* 16 x 11.2 */
 }
 
 .swedish-horizontal-bar {
-    background-color: rgb(255, 206, 0);
+    background-color: var(--flag-swedish-cross);
     height: 22.4px; /* 2 x 11.2 */
     left: 0;
     margin: 0;
@@ -423,7 +447,7 @@ strong {
 }
 
 .swedish-vertical-bar {
-    background-color: rgb(255, 206, 0);
+    background-color: var(--flag-swedish-cross);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -437,13 +461,13 @@ strong {
 /* Åland flag */
 
 .aland {
-    background-color: rgb(0, 82, 165);
+    background-color: var(--flag-aland-background);
     height: 112px; /* 17 x 6.588235294 */
     width: 171.2941176px; /* 26 x 6.588235294 */
 }
 
 .aland-yellow-horizontal-bar {
-    background-color: rgb(255, 206, 0);
+    background-color: var(--flag-aland-cross-lower);
     height: 32.94117647px; /* 5 x 6.588235294px */
     left: 0;
     margin: 0;
@@ -455,7 +479,7 @@ strong {
 }
 
 .aland-red-horizontal-bar {
-    background-color: rgb(210, 16, 52);
+    background-color: var(--flag-aland-cross-upper);
     height: 13.17647059px; /* 2 x 6.588235294 */
     left: 0;
     margin: 0;
@@ -467,7 +491,7 @@ strong {
 }
 
 .aland-yellow-vertical-bar {
-    background-color: rgb(255, 206, 0);
+    background-color: var(--flag-aland-cross-lower);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -479,7 +503,7 @@ strong {
 }
 
 .aland-red-vertical-bar {
-    background-color: rgb(210, 16, 52);
+    background-color: var(--flag-aland-cross-upper);
     height: 110px; /* 112px - 2px */
     margin: 0;
     padding: 0;
@@ -493,7 +517,7 @@ strong {
 /* Flagpole */
 
 .flagpole {
-    background-color: #a1a1a1;
+    background-color: var(--flagpole);
     height: 200px;
     margin-left: -7px;
     margin-top: -1px;
@@ -502,7 +526,7 @@ strong {
 }
 
 .ornament {
-    background-color: rgb(232, 159, 3);
+    background-color: var(--flagpole-ornament);
     border-radius: 50% 50% 2px 2px;
     height: 10px;
     margin-left: -2px;
@@ -512,7 +536,7 @@ strong {
 }
 
 .base {
-    background-color: rgb(24, 118, 3);
+    background-color: var(--flagpole-base);
     border-radius: 30px 30px 0 0;
     height: 30px;
     margin-left: -32px;
