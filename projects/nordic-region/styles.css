@@ -129,7 +129,7 @@ strong {
 /* Danish flag */
 
 .danish {
-    background-color: rgb(200, 0, 50);
+    background-color: rgb(210, 16, 52);
     height: 112px; /* 28 x 4 */
     width: 148px; /* 37 x 4 */
 }
@@ -711,7 +711,6 @@ footer a:hover {
     }
     
     .data-group ul {
-        /*align-self: center;*/
         justify-self: left;
     }
 
