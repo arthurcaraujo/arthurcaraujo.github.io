@@ -2,14 +2,79 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/8a43d32614.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@900&family=Open+Sans:wght@400;500;600;700;800&family=Secular+One&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Arthur C. Araújo</title>
+        <title>Arthur C. Araújo | Aspiring Front-End Developer</title>
     </head>
 
     <body>
-        <div>
-            <p>This page is in construction...</p>
-        </div>
+        <nav id="navbar">
+            <div id="logo">
+                <img id="header-img" src="images/favicon.jpg" alt="Arthur C. Araujo logo">
+                <span>ARTHUR C. ARAÚJO</span>
+            </div>
+
+            <ul>
+                <li><a href="#welcome-section">INTRO</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+            <div class="list-button">
+                <i class="material-icons bars-1" id="btn-1" onclick="openNav()">menu</i>
+                <i class="material-icons bars-2" id="btn-2" onclick="closeNav()">menu</i>
+              </div>
+        </nav>
+
+        <section id="welcome-section">
+            <h1><span>A</span><span>R</span><span>T</span><span>H</span><span>U</span><span>R</span> <span>C.</span> <span>A</span><span>R</span><span>A</span><span>Ú</span><span>J</span><span>O</span></h1>
+            <p>Aspiring Front-End Developer</p>
+        </section>
+
+        <section id="projects">
+            <h2>Here are some of my projects</h2>
+            <p>Please take a look</p>
+
+            <div id="projects-container">
+                <a class="project-tile" id="project-potato-head" href="https://arthurcaraujo.github.io/projects/mr-potato-head/" target="_blank">
+                    <img src="images/project-mr-potato-head.png" alt="Nordic Form project">
+                    <div class="project-title">Mr. Potato Head made of paper</div>
+                </a>
+                <a class="project-tile" id="project-nordic-langs" href="https://arthurcaraujo.github.io/projects/nordic-form/" target="_blank">
+                    <img src="images/project-nordic-languages.png" alt="Nordic Form project">
+                    <div class="project-title">Nordic Languages Survey Form</div>
+                </a>
+                <a class="project-tile" id="project-mauricio" href="https://arthurcaraujo.github.io/projects/homage-to-mauricio-de-sousa/" target="_blank">
+                    <img src="images/project-homage-to-mauricio.png" alt="Nordic Form project">
+                    <div class="project-title">Homage to Mauricio de Sousa</div>
+                </a>
+                <a class="project-tile" id="project-nordic-region" href="https://arthurcaraujo.github.io/projects/nordic-region/" target="_blank">
+                    <img src="images/project-nordic-region.png" alt="Nordic Form project">
+                    <div class="project-title">Nordic Region</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Presence on the internet</h2>
+
+            <div>
+                <a id="link-fcc" class="links" href="https://www.freecodecamp.org/arthurcaraujo" target="_blank">freeCodeCamp <i class="fa-brands fa-free-code-camp"></i></a>
+                <a id="link-github" class="links" href="https://github.com/arthurcaraujo" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+                <a id="link-linkedin" class="links" href="https://www.linkedin.com/in/arthurcaraujo/" target="_blank">LinkedIn <i class="icon fa fa-linkedin-square"></i></a>
+                <a id="link-youtube" class="links" href="https://www.youtube.com/channel/UC4VTSEODPjDl6B0kOW7Jykg" target="_blank">YouTube <i class="icon fa fa-youtube-play"></i></a>
+            </div>
+        </section>
+
+        <footer>Arthur C. Araújo &copy; 2022</footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
